@@ -7,6 +7,13 @@
 ## Setup
 
 
+After Download:
+
+
+1. npm Install
+2. npm start
+3. got to localhost:4000 in your browser
+
 ## Challenge Objectives:
 1. working with Angular and the OMDB API
 2. build an application that can search movies
@@ -43,11 +50,11 @@
 
 
 ### Tasks
-1. MVP
+1. [ ] MVP
     - [ ] Spin up server
     - [ ] Connect server to DB
     - [ ] Create and connect front end to back end
-2. Set Up DOM and connect to API
+2. [ ] Set Up DOM and connect to API
     - [ ] Search input and submit buttons as a part of controller 1 (C1)
     - [ ] connect search button to API with Angular factory
     - [ ] Display result to DOM (C1)

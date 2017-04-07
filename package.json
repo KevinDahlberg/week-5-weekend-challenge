@@ -1,0 +1,27 @@
+{
+  "name": "week-5-weekend-challenge",
+  "version": "1.0.0",
+  "description": "--- ## Project can be found at:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinDahlberg/week-5-weekend-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinDahlberg/week-5-weekend-challenge/issues"
+  },
+  "homepage": "https://github.com/KevinDahlberg/week-5-weekend-challenge#readme",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "body-parser": "^1.17.1",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.3"
+  }
+}
