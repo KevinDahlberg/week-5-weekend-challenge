@@ -53,11 +53,11 @@ After Download:
 1. [ ] MVP
     - [x] Spin up server
     - [x] Connect server to DB
-    - [ ] Create and connect front end to back end
-2. [ ] Set Up DOM and connect to API
+    - [x] Create and connect front end to back end
     - [ ] Search input and submit buttons as a part of controller 1 (C1)
     - [ ] connect search button to API with Angular factory
     - [ ] Display result to DOM (C1)
+2. [ ] Set Up DOM and connect to API
     - [ ] create add to favorites button on results and send information to an array
     - [ ] set up controller 2 to show favorites array to DOM
 
