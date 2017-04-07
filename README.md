@@ -51,8 +51,8 @@ After Download:
 
 ### Tasks
 1. [ ] MVP
-    - [ ] Spin up server
-    - [ ] Connect server to DB
+    - [x] Spin up server
+    - [x] Connect server to DB
     - [ ] Create and connect front end to back end
 2. [ ] Set Up DOM and connect to API
     - [ ] Search input and submit buttons as a part of controller 1 (C1)
