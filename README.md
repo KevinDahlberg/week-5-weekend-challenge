@@ -48,11 +48,11 @@
     - [ ] Connect server to DB
     - [ ] Create and connect front end to back end
 2. Set Up DOM and connect to API
-  - [ ] Search input and submit buttons as a part of controller 1 (C1)
-  - [ ] connect search button to API with Angular factory
-  - [ ] Display result to DOM (C1)
-  - [ ] create add to favorites button on results and send information to an array
-  - [ ] set up controller 2 to show favorites array to DOM
+    - [ ] Search input and submit buttons as a part of controller 1 (C1)
+    - [ ] connect search button to API with Angular factory
+    - [ ] Display result to DOM (C1)
+    - [ ] create add to favorites button on results and send information to an array
+    - [ ] set up controller 2 to show favorites array to DOM
 
 ---
 
@@ -64,11 +64,11 @@
 
 ###Tasks
 
-1. [] Set up Mongo DB
-2. [] Post statement to Mongo DB
-  - [] Connect add to favorites button with the DB
-3. [] Get statement to Mongo DB
-  - [] set up Get statement to load on page load
+1.  [ ] Set up Mongo DB
+2.  [ ] Post statement to Mongo DB
+    - [ ] Connect add to favorites button with the DB
+3.  [ ] Get statement to Mongo DB
+    - [ ] set up Get statement to load on page load
 
 ---
 ### Pro Mode
@@ -76,7 +76,7 @@
 
 * Add the ability to remove a movie from the Mongo Database, and ensure that the favorites view updates as well.
 
-1. [] Delete Button and connect to DB
+1.  [ ] Delete Button and connect to DB
 ---
 ### Master Mode
 
