@@ -1,6 +1,10 @@
 var myApp = angular.module('myApp', []);
 
 myApp.controller('OneController', ['$scope', 'MovieService', function($scope, MovieService){
+  $scope.clearSubmit = function() {
+    $scope.movie.name = '';
+  };
+
   $scope.getOMDB = MovieService.getOMDB;
   $scope.newMovie = MovieService.newMovie;
   $scope.addToFavorites = MovieService.addToFavorites;
@@ -31,10 +35,6 @@ function receivedMovie (movie) {
     newMovie.push(movieObject);
 }
 
-  function getNewMovie (object) {
-    //get movie from DB here
-
-  }
 
   function addToFavorites (object){
     favorites.push(object);

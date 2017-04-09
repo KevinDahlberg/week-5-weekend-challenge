@@ -12,7 +12,7 @@
   <div ng-controller="OneController">
     <p>Search for Movie</p>
     <input type="text" ng-model="movie.name" placeholder="Movie Name">
-    <button ng-click="getOMDB(movie.name)">Submit</button>
+    <button ng-click="getOMDB(movie.name); clearSubmit()">Submit</button>
     <div ng-repeat = "newMovie in newMovie">
       <div class = "newMovie">
         <button ng-click = "addToFavorites(newMovie)">Add to Favorites</button>
