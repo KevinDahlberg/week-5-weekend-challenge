@@ -11,11 +11,11 @@ myApp.controller('TwoController', ['$scope', 'MovieService', function($scope, Mo
 }]);
 
 myApp.factory('MovieService', ['$http', function($http){
-  var movieFavorites = [];
   var favorites = [];
   var newMovie = [];
 
 function receivedMovie (movie) {
+    newMovie.length = 0;
     var movieObject = {
     Title : movie.Title,
     Director : movie.Director,
