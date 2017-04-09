@@ -12,9 +12,21 @@
     <div ng-controller="OneController">
       <p>Search for Movie</p>
       <input type="text" ng-model="movie.name" placeholder="Movie Name">
-      <button ng-click="addToFavorites(movie)">Submit</button>      
+      <button ng-click="getOMDB(movie.name)">Submit</button>
+      <div ng-repeat = "newMovie in movieFavorites">
+            Title : {{newMovie.Title}},
+            Director : {{newMovie.Director}},
+            Genre : {{newMovie.Genre}},
+            Plot : {{newMovie.Plot}},
+            Rated : {{newMovie.Rated}},
+            Released : {{newMovie.Released}},
+            Actors : {{newMovie.Actors}},
+            Ratings : {{newMovie.Ratings}},
+            Poster : {{newMovie.Poster}}
+      </div>
     </div>
     <div ng-controller="TwoController">
+
     </div>
   </body>
 </html>
