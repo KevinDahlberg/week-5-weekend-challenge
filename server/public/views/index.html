@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
-  <head>
-    <meta charset="utf-8">
-    <title>Week 5 Weekend Challenge</title>
-    <link rel="stylesheet" href="/styles/style.css">
-    <script type="text/javascript" src="vendors/angular/angular.min.js"></script>
-    <script type="text/javascript" src="scripts/client.js"></script>
-  </head>
-  <body>
-    <h1>Chi Movie Review</h1>
-    <div ng-controller="OneController">
-      <p>Search for Movie</p>
-      <input type="text" ng-model="movie.name" placeholder="Movie Name">
-      <button ng-click="getOMDB(movie.name)">Submit</button>
-      <div ng-repeat = "newMovie in movieFavorites">
-            Title : {{newMovie.Title}},
-            Director : {{newMovie.Director}},
-            Genre : {{newMovie.Genre}},
-            Plot : {{newMovie.Plot}},
-            Rated : {{newMovie.Rated}},
-            Released : {{newMovie.Released}},
-            Actors : {{newMovie.Actors}},
-            Ratings : {{newMovie.Ratings}},
-            Poster : {{newMovie.Poster}}
+<head>
+  <meta charset="utf-8">
+  <title>Week 5 Weekend Challenge</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <script type="text/javascript" src="vendors/angular/angular.min.js"></script>
+  <script type="text/javascript" src="scripts/client.js"></script>
+</head>
+<body>
+  <h1>Chi Movie Review</h1>
+  <div ng-controller="OneController">
+    <p>Search for Movie</p>
+    <input type="text" ng-model="movie.name" placeholder="Movie Name">
+    <button ng-click="getOMDB(movie.name)">Submit</button>
+    <div ng-repeat = "newMovie in newMovie">
+      <div class = "newMovie">
+        <button ng-click = "addToFavorites(newMovie)">Add to Favorites</button>
+        <p>Title : {{newMovie.Title}}</p>
+        <p>Director : {{newMovie.Director}}</p>
+        <p>Genre : {{newMovie.Genre}}</p>
+        <p>Plot : {{newMovie.Plot}}</p>
+        <p>Rated : {{newMovie.Rated}}</p>
+        <p>Released : {{newMovie.Released}}</p>
+        <p>Actors : {{newMovie.Actors}}</p>
+        <p>Ratings : {{newMovie.Ratings}}</p>
+        <p>Poster : {{newMovie.Poster}}</p>
       </div>
     </div>
-    <div ng-controller="TwoController">
-
+  </div>
+  <div ng-controller="TwoController">
+    <div ng-repeat = "newMovie in favorites">
+      <div class = "newMovie">
+        <p>Title : {{newMovie.Title}}</p>
+        <p>Director : {{newMovie.Director}}</p>
+        <p>Genre : {{newMovie.Genre}}</p>
+        <p>Plot : {{newMovie.Plot}}</p>
+        <p>Rated : {{newMovie.Rated}}</p>
+        <p>Released : {{newMovie.Released}}</p>
+        <p>Actors : {{newMovie.Actors}}</p>
+        <p>Ratings : {{newMovie.Ratings}}</p>
+        <p>Poster : {{newMovie.Poster}}</p>
+      </div>
     </div>
-  </body>
+  </div>
+</body>
 </html>

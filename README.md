@@ -50,16 +50,17 @@ After Download:
 
 
 ### Tasks
-1. [ ] MVP
+1. [x] MVP
     - [x] Spin up server
     - [x] Connect server to DB
     - [x] Create and connect front end to back end
-    - [ ] Search input and submit buttons as a part of controller 1 (C1)
-    - [ ] connect search button to API with Angular factory
-    - [ ] Display result to DOM (C1)
-2. [ ] Set Up DOM and connect to API
-    - [ ] create add to favorites button on results and send information to an array
-    - [ ] set up controller 2 to show favorites array to DOM
+    - [x] Search input and submit buttons as a part of controller 1 (C1)
+    - [x] connect search button to API with Angular factory
+    - [x] Display result to DOM (C1)
+2. [x] Set Up DOM and connect to API
+    - [x] create add to favorites button on results and send information to an array
+    - [x] set up controller 2 to show favorites array to DOM
+3. [ ] Use CSS to make pretty
 
 ---
 
@@ -88,4 +89,4 @@ After Download:
 ### Master Mode
 
 
-#### Host the application on Heroku and mLabs. No need to do a data dump of an existing database.
+* Host the application on Heroku and mLabs. No need to do a data dump of an existing database.
