@@ -60,7 +60,7 @@ After Download:
 2. [x] Set Up DOM and connect to API
     - [x] create add to favorites button on results and send information to an array
     - [x] set up controller 2 to show favorites array to DOM
-3. [ ] Use CSS to make pretty
+3. [x] Use CSS to make pretty
 
 ---
 
@@ -72,11 +72,11 @@ After Download:
 
 ###Tasks
 
-1.  [ ] Set up Mongo DB
-2.  [ ] Post statement to Mongo DB
-    - [ ] Connect add to favorites button with the DB
-3.  [ ] Get statement to Mongo DB
-    - [ ] set up Get statement to load on page load
+1.  [x] Set up Mongo DB
+2.  [x] Post statement to Mongo DB
+    - [x] Connect add to favorites button with the DB
+3.  [x] Get statement to Mongo DB
+    - [x] set up Get statement to load on page load
 
 ---
 ### Pro Mode
@@ -84,7 +84,7 @@ After Download:
 
 * Add the ability to remove a movie from the Mongo Database, and ensure that the favorites view updates as well.
 
-1.  [ ] Delete Button and connect to DB
+1.  [x] Delete Button and connect to DB
 ---
 ### Master Mode
 
