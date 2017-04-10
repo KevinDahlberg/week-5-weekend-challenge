@@ -10,8 +10,11 @@ myApp.controller('OneController', ['$scope', 'MovieService', function($scope, Mo
   $scope.addToFavorites = MovieService.addToFavorites;
 }]);
 
-myApp.controller('TwoController', ['$scope', 'MovieService', function($scope, MovieService){
+myApp.controller('TwoController', ['$scope', '$http', 'MovieService', function($scope, $http, MovieService){
   $scope.favorites = MovieService.favorites;
+  $scope.getFavorites = MovieService.getFavorites;
+  $scope.getFavorites();
+
 }]);
 
 myApp.factory('MovieService', ['$http', function($http){
@@ -35,13 +38,22 @@ function receivedMovie (movie) {
     newMovie.push(movieObject);
 }
 
+ function addToFavorites(object){
+  $http.post('/favorites', object).then(function(response){
+    getFavorites();
+  });
+  }
 
-  function addToFavorites (object){
-    favorites.push(object);
+  function getFavorites(){
+    $http.get('/favorites').then(function(response){
+      favorites.length = 0;
+      favorites.push(response.data);
+    });
   }
 
   return {
-  addToFavorites :addToFavorites,
+  getFavorites : getFavorites,
+  addToFavorites : addToFavorites,
   favorites : favorites,
 
   getOMDB : function (movie) {

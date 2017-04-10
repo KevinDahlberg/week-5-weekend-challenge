@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 //route and module variables
 var index = require('./routes/index.js');
 var db = require('./modules/db.js');
+var favorites = require('./routes/favorites.js');
 
 //port
 app.set('port', (process.env.PORT || 4000));
@@ -18,6 +19,7 @@ app.use(express.static('server/public'));
 
 //routes
 app.use('/', index);
+app.use('/favorites', favorites);
 
 //port listen
 app.listen(app.get('port'), function(){

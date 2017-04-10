@@ -29,7 +29,8 @@
     </div>
   </div>
   <div ng-controller="TwoController">
-    <div ng-repeat = "newMovie in favorites">
+    <div ng-repeat = "movie in favorites">
+      <div ng-repeat = "newMovie in movie">
       <div class = "newMovie">
         <p>Title : {{newMovie.Title}}</p>
         <p>Director : {{newMovie.Director}}</p>
@@ -41,6 +42,7 @@
         <p>Ratings : {{newMovie.Ratings}}</p>
         <p>Poster : {{newMovie.Poster}}</p>
       </div>
+    </div>
     </div>
   </div>
 </body>
