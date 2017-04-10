@@ -47,7 +47,9 @@ function receivedMovie (movie) {
 
  function addToFavorites(object){
   $http.post('/favorites', object).then(function(response){
+    newMovie.length = 0;
     getFavorites();
+    return newMovie;
   });
   }
 
