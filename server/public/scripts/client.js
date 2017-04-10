@@ -15,6 +15,13 @@ myApp.controller('TwoController', ['$scope', '$http', 'MovieService', function($
   $scope.getFavorites = MovieService.getFavorites;
   $scope.getFavorites();
 
+  $scope.deleteFavorites = function (index) {
+    var favoriteToDelete = $scope.favorites[0][index];
+    console.log(favoriteToDelete._id);
+    $http.delete('/favorites/' + favoriteToDelete._id).then(function(response){
+      $scope.getFavorites();
+    });
+  };
 }]);
 
 myApp.factory('MovieService', ['$http', function($http){

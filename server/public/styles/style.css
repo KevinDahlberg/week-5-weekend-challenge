@@ -1,3 +1,26 @@
 .newMovie {
   border : 3px solid black;
+  Margin : 10px;
+  Padding : 10px;
+}
+
+img {
+  float: left;
+  margin-right: 5px;
+}
+
+p {
+  float: none;
+}
+.header {
+  text-align: center;
+}
+
+#addToFavorites, #delete {
+  float: right;
+  margin: 5px;
+}
+
+.search {
+  font-size: 24px:
 }

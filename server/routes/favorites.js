@@ -46,4 +46,15 @@ router.post('/', function(req,res){
   });
 });
 
+router.delete('/:id', function (req,res){
+  console.log(req.params);
+  Favorite.findByIdAndRemove((req.params.id), function (err, allFavorites){
+    if (err) {
+      console.log("mongo error: ", err);
+      sendStatus(500);
+    }
+    res.sendStatus(200);
+  });
+});
+
 module.exports=router;
